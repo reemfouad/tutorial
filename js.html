@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	
+	
+</head>
+<body>
+	<h1>my first web page</h1>
+	<p>my first paragraph </p>
+	<p class="demo"> </p>
+	<p id="d"> name</p>
+	<p id="demo1"> </p>
+	
+
+
+	<script type="text/javascript">
+		document.write("name")
+		
+		document.getElementsByClassName("demo")[0].innerHTML="ID  name  dep";
+		document.getElementsByClassName("demo")[0].style.color="blue";
+		document.getElementsByClassName("demo")[0].style.fontSize="30px";
+		document.getElementsByClassName("demo")[0].style.fontFamily="Arial";
+		document.getElementsByClassName("demo")[1].innerHTML="name";
+		document.getElementById("d").style.color="blue";
+		var price1=5;
+		var price2=6;
+		var total=price1+price2;
+		document.ge9tElementById("d").innerHTML="the total is:"+total;
+
+		var x="<table border ='1'><tr><td>ID</td><td> name</td><td> dep </td></tr>  ";
+		x+="<tr><td>1</td><td> ahmad</td><td> IT</td></tr>   ";
+		x+="<tr><td>2</td><td> ZAin</td><td> HR</td></tr>   ";
+		x+="<tr><td>3</td><td> Muna</td><td> Sales</td></tr> </table>  ";
+		
+
+		
+
+		document.getElementById("d").innerHTML=x;
+
+		var x=16;
+		var is_married=true;
+		var userRow={firstName:"john",lastName:"doe"};
+		console.log(userRow.firstName);
+		var cars=["saab","volvo","BMW"];
+		
+
+
+		document.getElementById("demo1").innerHTML=cars;
+	
+
+
+
+
+
+
+
+		
+	</script>
+
+</body>
+</html>

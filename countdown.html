@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="css/countdown.css">
+</head>
+<body>
+	<div id="demo"> </div>
+    "<table border='1'>
+    	<tr>
+    		<td>#</td>
+    		<td>Name</td>
+    		<td>Age</td>
+    	</tr>";
+	
+	
+	<script type="text/javascript">
+		//countdown
+		// var end=new Date("Dec 8, 2019 11:50:00").getTime();
+		// var x = setInterval(function() { 
+		// var now = new Date().getTime(); 
+		// var t = end - now; 
+		// var days = Math.floor(t / (1000 * 60 * 60 * 24)); 
+		// var hours = Math.floor((t%(1000 * 60 * 60 * 24))/(1000 * 60 * 60)); 
+		// var minutes = Math.floor((t % (1000 * 60 * 60)) / (1000 * 60)); 
+		// var seconds = Math.floor((t % (1000 * 60)) / 1000); 
+		// document.getElementById("demo").innerHTML = days + "d "  
+		// + hours + "h " + minutes + "m " + seconds + "s "; 
+
+		// if (t < 0) { 
+  //               clearInterval(x); 
+  //               document.getElementById("demo").innerHTML = "The End"; 
+  //                   } 
+  //           });
+
+
+		// var days = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+		// for(var i=0 ; i<days.length ; i++ )
+		// {
+		// 	document.write(days[i]);
+		// }
+		// //print array component
+		// for(key in days)
+		// 	console.log(key,days[key]);
+
+
+		var person={
+			Name:["Sara","Ahmad","Sami","hello","me","Meagain"],
+			Age:[20,30,25,24,25,28]
+			
+		}
+		
+		for(key in person.Name){
+			
+			document.write("<tr>");
+			document.write("<td>"+ key+ "</td>");
+		    document.write("<td>"+ person.Name[key] + "</td>");
+			document.write("<td>"+ person.Age[key] + "</td>");
+			document.write("</tr>");
+		}
+	
+	
+
+
+
+		// var  arr1=['ahmad','sara']
+		// var arr2=[20,30]
+		
+
+		// for (i=0;i<arr1.length;i++ ){
+		// 	document.write("<tr>")
+		// 	document.write("<td>"+i+"</td>");
+		// 	document.write("<td>"+arr1[i]+"</td>");
+		// 	document.write("<td>"+arr2[i]+"</td></tr>");
+		//}
+            
+
+	</script>
+
+</body>
+</html>

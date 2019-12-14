@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<div id="demo"></div>
+	<script type="text/javascript">
+		var d=new Date();
+		day=d.getDate();
+		month=d.getMonth()+1;
+		year=d.getFullYear()
+		document.write(day + "/"+month+"/"+year+"<br>");
+
+		sec=d.getSeconds();
+		min=d.getMinutes();
+		hour=d.getHours();
+		document.write(hour +":"+min+":"+sec +"<br>");
+		
+		var days = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+		document.write (days[d.getDay()] +"<br>");
+
+		var arr=d.toDateString();
+		document.write(arr +"<br>");
+
+
+		var dec=d.toLocaleString()
+		document.write(dec+"<br>");
+
+		// var dateinMS=d.getTime();
+		// document.write(dateinMS +"<br>");
+		var y=new Date(d.getTime());
+		document.write(y)
+	</script>
+
+</body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<div id="demo"> </div>
+	<script type="text/javascript">
+		document.getElementById("demo").innerHTML=
+		typeof "john"+"<br>"+
+		typeof 3.34 +"<br>" +
+		typeof NaN + "<br>" +
+		typeof [1,2,3,4] +"<br>"+
+		typeof {name:'john', age:34} +"<br>" +
+		typeof new Date() + "<br>" +
+		typeof function () {} +"<br>"+
+		typeof mycar + "<br>" +
+		typeof null;
+
+		const q=12;
+		
+		console.log(q);
+
+		var name="reem otoum";
+		name.length;
+		//console.log(name);
+		
+		name.indexOf("reem");
+		//console.log(name);
+		name.lastIndexOf("reem");
+		//document.write(name.search("otoum"));
+		name.search("reem");
+		//document.write(name.search("reem"));
+		name.slice(4, 10);
+		name.substring(4, 10);
+		name.replace("reem","rana");
+		console.log(name.replace("reem","rana"));
+		name.toUpperCase();
+		//console.log(name.toUpperCase());
+		name.toLowerCase();
+		name.trim();
+		//document.write(name.concat("" , "1234"));
+		//var split=name.split("");
+		//document.write(split);
+		//document.write(name.charAt(0));
+		//document.write(name.charCodeAt(0));
+		//document.write(split);
+		is_string = function(input) {
+  if (Object.prototype.toString.call(input) === '[object String]')
+    return true;
+  else
+    return false;   
+    };
+console.log(is_string('w3resource'));
+console.log(is_string([1, 2, 4, 0]));
+
+
+
+		is_Blank =  function(input) {
+        if (input.length === 0)
+        return true;
+        else 
+        return false;
+      }
+console.log(is_Blank(''));
+console.log(is_Blank('abc'));
+
+string_to_array = function (str) {
+     return str.trim().split(" ");
+};
+console.log(string_to_array("Robin Singh"));
+
+
+truncate_string = function (str1, length) {
+  
+    if ((str1.constructor === String) && (length>0)) {
+        return str1.slice(0, length);
+    }
+};
+console.log(truncate_string("Robin Singh",4));
+
+abbrev_name = function (str1) {
+    var split_names = str1.trim().split(" ");
+    if (split_names.length > 1) {
+        return (split_names[0] + " " + split_names[1].charAt(0) + ".");
+    }
+    return split_names[0];
+};
+console.log(abbrev_name("Robin Singh"));
+
+var str = "reemotoum@yahoo.com";
+var res = str.slice(7);
+document.getElementById("demo").innerHTML = res;
+		
+
+
+
+
+
+	</script>
+
+</body>
+</html>

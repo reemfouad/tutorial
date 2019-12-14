@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<div id="demo"></div>
+	<script type="text/javascript">
+		
+		var xx=[1,2,3,4,5,6];
+
+		document.write(xx.toString()+"<br>");
+		document.write(xx.join("*")+"<br>");
+		var y=xx.pop()
+		document.write(y+"<br>");
+		xx.push(6);
+		document.write(xx +"<br>");
+		xx.shift();
+		document.write(xx +"<br>");
+		xx.unshift("1");
+		document.write(xx +"<br>")
+		//xx[xx.length]="r";
+		document.write(xx.length +"<br>");
+		document.write(xx.sort()+"<br>");
+		document.write(xx.reverse()+"<br>");
+		document.write(xx.reverse()+"<br>");
+		//delete xx[3];
+	
+		//document.write(xx +"<br>");
+
+		//xx.splice();
+		//document.write(xx);
+		//var y=xx.slice(2,5);
+		document.write(xx.fill(20,2,5) +"<br>");
+
+
+
+		var arr=[2,45,34,67,32,100,132];
+		y=arr.sort(function(a, b){return a-b});
+		console.log(y);
+
+		var hour=7;
+		if (hour<18) {
+		greeting="good day" 
+		} ;
+		document.write(greeting +"<br>");
+
+		var num=5;
+		//if(num%2==0){
+			//numb="even"
+		//}else{
+			//numb="odd"
+		//};
+		//document.write(numb);
+
+		numb=(num%2==0)?"even":"odd";
+		document.write(numb +"<br>");
+
+
+		var mark=33;
+		if(100>mark &&mark>90){
+			avg="A";
+		}else if(89>mark &&mark>80){
+			avg="B";
+		}else if(79>mark &&mark>70){
+			avg="C";
+		}else if(69>mark &&mark>50){
+			avg="D";
+		}else{
+			avg="F";
+		};
+		document.write(avg);
+
+		var y="w";
+
+
+
+		switch (y){
+			case 0:
+			x="a";
+			break;
+			case 1:
+
+			x="b";
+			break;
+			case 2:
+			x="c";
+			break;
+			
+			default:
+			x="is not found";
+
+		}
+		document.write(x);
+
+		function say_hi(name,last){
+			return "hi "+name+" "+last;
+		}
+		var x= say_hi("htu","uni");
+		console.log(x);
+
+	
+		
+
+		function factorial (n){
+			if (n==1)
+				return n;
+			else 
+				return n*factorial(n-1)
+		}
+		
+		console.log(factorial(5))
+
+
+
+
+
+
+
+		var a=4;
+		//if ()
+		//function fun(a){
+		// 	return a*a
+		// } 
+		// var w=fun(a)
+
+
+
+
+
+
+
+		
+
+
+		
+
+
+
+
+	</script>
+
+</body>
+</html>

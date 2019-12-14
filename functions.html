@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+</head>
+
+<body>
+    <!-- <div class="row container ">
+	<div id="demo" class="col-md-3 bg-success ">
+		<h3>0-100</h3>
+
+	</div>
+	<div id="dem" class="col-md-3 bg-primary">
+		<h3>even number</h3>
+
+	</div>
+	<div id="de"class="col-md-3 bg-danger " >
+		<h2>num*5</h2>
+	</div>
+	<div id="d" class="col-md-3 bg-warning ">
+		<h2>num*10</h2>
+	</div>
+	</div> -->
+    <div class="row container ">
+        <div class="col-md-3 bg-success ">
+            <h3>0-100</h3>
+            <h2 id="demo"></h2>
+
+        </div>
+        <div class="col-md-3 bg-primary">
+            <h3>0-1000</h3>
+            <h2 id="dem"></h2>
+
+        </div>
+        <div class="col-md-3 bg-danger ">
+            <h2>0-10000</h2>
+            <h2 id="de"></h2>
+        </div>
+        <div class="col-md-3 bg-warning ">
+            <h2>0-100000</h2>
+            <h2 id="d">num*10</h2>
+        </div>
+    </div>
+
+
+
+    <script type="text/javascript">
+        // let i=0
+        // while (i<100){
+        // 	i+=2;
+        // 	document.getElementById('demo').innerHTML+=("the number is " +i +'<br>');
+
+        // }
+        // let a=1
+        // while (a<100){
+        // 	a+=2;
+        // 	document.getElementById('dem').innerHTML+=("the number is " +a +'<br>');
+
+        // }
+
+        // let r=1
+        // while (r<=20){
+        // 	document.getElementById('de').innerHTML+=("the number is " +r*5 +'<br>');
+        // 	r++;
+
+        // }
+
+        // let b=1
+        // while (b<=10){
+        // 	document.getElementById('d').innerHTML+=("the number is " +b*10 +'<br>');
+        // 	b++;
+        // }
+
+        // for (var q = 0; q <5; q++) {
+
+        // console.log('the number is' +q)
+        // }
+
+
+        // var a=0;
+        // for ( i = 477.75;i>=0.25 ; i-=0.25) {
+        // 	a+=1;
+        // }
+        // console.log(a);
+
+
+        // var b=0;
+        // for ( i = 0; i < 477.75; i+=0.25) {
+        // 	b++;
+        // }
+        // console.log(b);
+
+        // let c=0
+        // while(c<10){
+        // 	c++;
+        // 	if(c==5){continue;}
+        // 	console.log("the number is" +c);
+
+        // }
+        //number sumation until sum=100 
+        // let a=0;
+        // for (var i = 0; i < 30; i++) {
+
+        //     a+=i;
+        // if(a>=100){
+        // 	console.log(i);
+        // 	console.log(a);
+        // 	break;}
+
+
+        // } 
+
+        var dt = new Date();
+
+        for (var i = 0; i < 100; i++) {
+            document.write(i + '<br>');
+        }
+        b = new Date()
+        a = b - dt;
+        document.getElementById('demo').innerHTML = (a);
+
+        var dt = new Date();
+
+        for (var i = 0; i < 1000; i++) {
+            document.write(i + '<br>');
+        }
+        b = new Date()
+        a = b - dt;
+        document.getElementById('dem').innerHTML = (a);
+
+        var dt = new Date();
+
+        for (var i = 0; i < 10000; i++) {
+            document.write(i + '<br>');
+        }
+        b = new Date()
+        a = b - dt;
+        document.getElementById('de').innerHTML = (a);
+
+        var dt = new Date();
+
+        for (var i = 0; i < 10000; i++) {
+            document.write(i + '<br>');
+        }
+        b = new Date()
+        a = b - dt;
+        document.getElementById('d').innerHTML = (a);
+    </script>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<div id="a"></div>
+	<p id="b"></p>
+
+	<script type="text/javascript">
+		var name="reem fouad otoum";
+		var email="reemotoum@yahoo.com";
+
+		document.write(typeof name +"<br>");
+
+		if(name.lenght==null) {
+
+			document.write("blank" +"<br>");
+		}
+		else{
+			document.write("is not blank")
+		}
+
+		document.write(name.split(" ") +"<br>");
+
+		var e1=email.slice(0,3) +"....";
+		var e2=email.slice(-11);
+		document.write(e1,e2 +"<br>");
+
+		var h="HA";
+		document.write(h.repeat(3));
+	</script>
+
+</body>
+</html>
